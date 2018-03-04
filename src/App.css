@@ -65,11 +65,9 @@ a:hover{
   border-color: rgba(0, 123, 255, .3);
 }
 
-.repo-name{
+.repo-name, .back-button{
   text-transform: uppercase;
-}
-
-.back-button{
   cursor: pointer;
   transition: all ease 200ms;
+  color: #007bff;
 }

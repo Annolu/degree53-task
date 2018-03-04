@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export default class Details extends Component{
   render(){
-    const {clickedRepo , listView, readmeUrl, updateView } = this.props;
+    const {clickedRepo , readmeUrl, updateView } = this.props;
     return(
       <div className= 'details-list'>
         <div className='card'>
@@ -24,7 +24,7 @@ export default class Details extends Component{
             </ul>
           </div>
         </div>
-        <a href='#' className='back-button' onClick= {updateView}>Back to list</a>
+        <span className='back-button' onClick= {updateView}>Back to list</span>
       </div>
     )
   }

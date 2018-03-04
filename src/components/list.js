@@ -11,10 +11,10 @@ export default class List extends Component{
           return <li key={i}>
             <div className='card'>
               <div className="card-body">
-                <a className="repo-name" href='#' onClick= {e => {
+                <span className="repo-name" onClick= {e => {
                   e.preventDefault();
                   this.props.onclick(item)
-                }}>{item.name}</a>
+                }}>{item.name}</span>
                 {item.owner.login &&
                   <p className='username'>by: {item.owner.login}</p>
                 }
